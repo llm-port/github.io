@@ -5,7 +5,14 @@ title: Observability
 
 # Observability
 
-llm.port provides visibility into usage, performance, cost, and operational behavior.
+llm.port helps you understand what is happening in your AI system day to day.
+
+You can quickly answer questions like:
+
+- Are requests healthy and fast?
+- Which models are being used most?
+- Where is cost going up?
+- Who changed what, and when?
 
 ## What you can observe
 
@@ -22,38 +29,42 @@ The **Cost Observability** dashboard (Admin → Observability → Cost Dashboard
 
 ### Overview Tab
 
-| Widget | Description |
-|--------|-------------|
-| **Estimated Spend** | Total estimated cost for the selected period |
-| **Total Requests** | Number of gateway requests |
-| **Total Tokens** | Prompt + completion tokens consumed |
-| **Avg Latency** | Average request latency |
-| **Error Rate** | Percentage of requests with 4xx/5xx status |
-| **Cost Over Time** | Line chart of cost per day/hour |
-| **Request Throughput** | Line chart of requests per day/hour |
-| **Latency Percentiles** | Bar chart of p50/p95/p99 latency |
-| **Spend by Model** | Bar chart of cost per model |
-| **Top Users** | Table of users ranked by request count |
+| Widget                  | Description                                  |
+| ----------------------- | -------------------------------------------- |
+| **Estimated Spend**     | Total estimated cost for the selected period |
+| **Total Requests**      | Number of gateway requests                   |
+| **Total Tokens**        | Prompt + completion tokens consumed          |
+| **Avg Latency**         | Average request latency                      |
+| **Error Rate**          | Percentage of requests with 4xx/5xx status   |
+| **Cost Over Time**      | Line chart of cost per day/hour              |
+| **Request Throughput**  | Line chart of requests per day/hour          |
+| **Latency Percentiles** | Bar chart of p50/p95/p99 latency             |
+| **Spend by Model**      | Bar chart of cost per model                  |
+| **Top Users**           | Table of users ranked by request count       |
 
-Use the **date range selector** (7d / 14d / 30d / 90d) to adjust the time window. Click the **CSV Export** button to download raw request data.
+Use the **date range selector** (7d / 14d / 30d / 90d) to focus on the time window you care about. Use **CSV Export** when you want to share or analyze data outside the UI.
 
 ### Requests Tab
 
 Paginated log of all gateway requests with:
+
 - **Filters:** model alias, user ID
 - **Expandable detail:** request ID, trace ID, provider, tokens, TTFT, cost breakdown, estimate status
 - **Status badges:** color-coded HTTP status
 
+This is usually the fastest place to investigate a user-reported issue.
+
 ### Pricing Tab
 
 Manage the cost catalog used for request-level estimates:
+
 - **Add** new provider/model pricing entries
 - **Edit** prices (creates a new version, deactivates the old one)
 - **Delete** (deactivate) entries
 - **View history** per model to audit price changes
 - Seed data included for common models (GPT-4.1, Claude Sonnet 4, Gemini 2.5 Pro, etc.)
 
-> **Note:** Prices are estimates used for cost tracking. They do not affect billing or provider charges.
+> **Note:** Prices are estimates for visibility and planning. They do not change provider billing.
 
 ### How cost estimates work
 
@@ -65,6 +76,7 @@ Manage the cost catalog used for request-level estimates:
 ### Enterprise Edition extensions
 
 The following features require the Enterprise Edition license:
+
 - **Budget management** — set monthly spend limits per tenant
 - **Cost forecasting** — projected spend based on historical trends
 - **Alerting** — threshold-based alerts for cost, error rate, latency
@@ -76,6 +88,8 @@ The following features require the Enterprise Edition license:
 - Better governance and compliance reporting
 - Data for capacity planning and optimization
 - **Cost visibility** without external observability platforms
+
+For most teams, this becomes the single source of truth for AI operations.
 
 ## Recommended operating practice
 
@@ -91,5 +105,7 @@ Public docs focus on observable outcomes and operating guidance, not internal te
 ![Dashboard](/img/screenshots/dashboard.png)
 
 ![Trace Viewer](/img/screenshots/trace.png)
+
+![Request cost trend graph](/img/screenshots/trace_cost_req_graph.png)
 
 ![Logging](/img/screenshots/logging.png)

@@ -272,6 +272,10 @@ const screenshots: Screenshot[] = [
   { src: "/img/screenshots/logging.png", alt: "Logging" },
   { src: "/img/screenshots/trace.png", alt: "Trace Viewer" },
   {
+    src: "/img/screenshots/trace_cost_req_graph.png",
+    alt: "Cost & Request Trends",
+  },
+  {
     src: "/img/screenshots/security_overview.png",
     alt: "Security Overview",
   },

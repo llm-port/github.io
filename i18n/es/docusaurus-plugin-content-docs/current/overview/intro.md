@@ -5,29 +5,40 @@ title: What is llm.port?
 
 # What is llm.port?
 
-**llm.port** is a self-hosted platform for teams that want one governed way to run and manage LLM workloads.
+**llm.port** es una plataforma de workspace AI autohospedada que ayuda a los equipos a operar funciones LLM con seguridad y control.
 
-It combines:
+En pocas palabras, te da un solo lugar para:
 
-- An **OpenAI-compatible Gateway** for app traffic
-- A **Control Plane** for administration and policy
-- Optional **Modules** for capabilities like RAG, PII controls, and integrations
-- Built-in **Observability** for usage, audit, and operations
+- conectar modelos (locales o remotos)
+- gestionar permisos y politicas
+- proteger datos sensibles
+- ver uso, calidad y costo en un mismo dashboard
+
+## Que puedes hacer
+
+- Publicar un modelo rapidamente y exponerlo a tus apps
+- Mantener gobierno y seguridad sin frenar al equipo
+- Seguir requests, errores y costos sin herramientas extra
+- Activar capacidades como RAG o controles de PII cuando lo necesites
 
 ## Who it is for
 
-- Platform and MLOps teams standardizing AI infrastructure
-- Security-focused organizations that need controlled AI operations
-- Product teams integrating LLM features without vendor lock-in
+- Equipos que quieren AI en produccion, no solo demos
+- Organizaciones con foco en seguridad y cumplimiento
+- Equipos de producto que necesitan lanzar funciones AI mas rapido
 
 ## Why teams choose llm.port
 
-- **Faster adoption**: one interface for deployment and operations
-- **Safer usage**: policy controls, audit visibility, and configurable privacy behavior
-- **Flexible architecture**: run local runtimes, remote providers, or both
+- **Adopcion rapida**: de instalacion a primera llamada en minutos
+- **Operacion segura**: controles, auditoria y guardrails de privacidad
+- **Arquitectura flexible**: modelos locales, proveedores remotos o ambos
+
+## Vista rapida
+
+![Dashboard de llm.port](/img/screenshots/dashboard.png)
 
 ## Next steps
 
-- Start with [Quickstart](../get-started/quickstart.md)
-- Review [Platform Overview](./platform-overview.md)
-- Integrate via [API Gateway](../integrate/api-gateway.md)
+- Empieza con [Quickstart](../get-started/quickstart.md)
+- Revisa [Platform Overview](./platform-overview.md)
+- Integra via [API Gateway](../integrate/api-gateway.md)

@@ -5,7 +5,7 @@ title: Quickstart
 
 # Quickstart
 
-This guide helps you get llm.port running quickly and validate your first request.
+Esta guia te ayuda a iniciar llm.port rapidamente y enviar tu primera solicitud con exito.
 
 ## Prerequisites
 
@@ -21,6 +21,8 @@ pip install llmport-cli
 
 You can also use the standalone binary if you prefer not to install Python tooling.
 
+Tambien puedes usar el binario standalone si no quieres instalar herramientas de Python.
+
 ## 2) Validate your host
 
 ```bash
@@ -35,7 +37,13 @@ llmport up
 
 ## 4) Complete initial setup
 
-Use the admin console setup flow to configure your first provider and access policy.
+Abre la consola de administracion y completa la configuracion inicial:
+
+- agregar un proveedor
+- elegir un alias de modelo
+- crear o pegar un token API
+
+Despues de eso, tus aplicaciones pueden usar llm.port desde un endpoint API estable.
 
 ## 5) Send a test request
 
@@ -51,6 +59,12 @@ curl http://localhost:4000/v1/chat/completions \
 
 ## What to do next
 
-- Configure providers and model aliases
-- Enable required modules (for example PII or RAG)
-- Review [Security Overview](../features/security-overview.md)
+- Configura proveedores y alias de modelos
+- Activa los modulos que necesites (por ejemplo PII o RAG)
+- Revisa [Security Overview](../features/security-overview.md)
+
+## Screenshots
+
+![Configuracion de proveedores](/img/screenshots/llm_providers.png)
+
+![Catalogo de modelos](/img/screenshots/models.png)

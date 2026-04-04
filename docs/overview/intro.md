@@ -5,26 +5,37 @@ title: What is llm.port?
 
 # What is llm.port?
 
-**llm.port** is a self-hosted platform for teams that want one governed way to run and manage LLM workloads.
+**llm.port** is a self-hosted AI workspace that helps teams run LLM features safely and confidently.
 
-It combines:
+In simple terms, it gives you one place to:
 
-- An **OpenAI-compatible Gateway** for app traffic
-- A **Control Plane** for administration and policy
-- Optional **Modules** for capabilities like RAG, PII controls, and integrations
-- Built-in **Observability** for usage, audit, and operations
+- connect models (local or hosted)
+- manage who can do what
+- protect sensitive data
+- see usage, quality, and cost in one dashboard
+
+## What you can do with it
+
+- Launch a model and expose it to your apps quickly
+- Keep governance in place without slowing teams down
+- Track requests, errors, and spend without extra tooling
+- Add capabilities like RAG or PII controls when you need them
 
 ## Who it is for
 
-- Platform and MLOps teams standardizing AI infrastructure
-- Security-focused organizations that need controlled AI operations
-- Product teams integrating LLM features without vendor lock-in
+- Teams that need AI in production, not just demos
+- Security-conscious organizations that must keep control of data
+- Product teams that want to ship AI features faster
 
 ## Why teams choose llm.port
 
-- **Faster adoption**: one interface for deployment and operations
-- **Safer usage**: policy controls, audit visibility, and configurable privacy behavior
-- **Flexible architecture**: run local runtimes, remote providers, or both
+- **Faster rollout**: from install to first request in minutes
+- **Safer operations**: policy controls, audit visibility, and privacy guardrails
+- **Flexible setup**: use local models, hosted providers, or both
+
+## A quick visual
+
+![llm.port dashboard](/img/screenshots/dashboard.png)
 
 ## Next steps
 

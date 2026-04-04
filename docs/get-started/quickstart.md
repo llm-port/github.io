@@ -5,7 +5,7 @@ title: Quickstart
 
 # Quickstart
 
-This guide helps you get llm.port running quickly and validate your first request.
+This guide helps you get llm.port running quickly and send your first successful request.
 
 ## Prerequisites
 
@@ -35,7 +35,13 @@ llmport up
 
 ## 4) Complete initial setup
 
-Use the admin console setup flow to configure your first provider and access policy.
+Open the admin console and complete the first-run setup:
+
+- add a provider
+- choose a model alias
+- create or paste an API token
+
+Once done, your apps can call llm.port through one stable API endpoint.
 
 ## 5) Send a test request
 
@@ -52,5 +58,11 @@ curl http://localhost:4000/v1/chat/completions \
 ## What to do next
 
 - Configure providers and model aliases
-- Enable required modules (for example PII or RAG)
+- Enable modules you need (for example PII or RAG)
 - Review [Security Overview](../features/security-overview.md)
+
+## Screenshots
+
+![Providers setup](/img/screenshots/llm_providers.png)
+
+![Model catalog](/img/screenshots/models.png)
