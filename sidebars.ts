@@ -24,7 +24,13 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Integrate",
-      items: ["integrate/api-gateway", "integrate/mcp-tools"],
+      items: [
+        "integrate/api-gateway",
+        "integrate/mcp-tools",
+        "integrate/sdk-overview",
+        "integrate/sdk-python",
+        "integrate/sdk-dotnet",
+      ],
     },
     {
       type: "category",
@@ -38,6 +44,8 @@ const sidebars: SidebarsConfig = {
         "features/ops-console",
         "features/skills",
         "features/multi-node",
+        "features/chat-interface",
+        "features/onboarding",
       ],
     },
     {
